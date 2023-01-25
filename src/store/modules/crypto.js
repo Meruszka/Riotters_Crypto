@@ -14,7 +14,6 @@ const actions = {
     if (process.env.NODE_ENV === "development") {
       commit("setCryptos", data.data);
     } else {
-      // rzeczywiste zapytanie do API
       cryptoApi.get().then((response) => {
         commit("setCryptos", response.data.data);
       });

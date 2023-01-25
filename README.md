@@ -7,7 +7,7 @@
 ## Environment variables
 
 - NODE_ENV=development <= to fetch data from local json files
-- NODE_ENV=production <= to fetch data from the api
+- VITE_API_KEY=YOUR API KEY <= to fetch data from the api
   (see `src/api/cryptoApi.js`) set the api key
 
 ```bash
