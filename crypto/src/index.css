@@ -1,0 +1,22 @@
+@import url("https://fonts.cdnfonts.com/css/sf-pro-display");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .menu-item {
+    @apply text-black bg-primary;
+  }
+  .menu-item:hover {
+    @apply text-black bg-white;
+  }
+  .menu-item:active {
+    @apply text-black bg-white;
+  }
+  .card {
+    @apply bg-primary rounded-lg;
+  }
+  .button {
+    @apply bg-primary text-black border-b-4 border-purple mx-2 p-2;
+  }
+}
