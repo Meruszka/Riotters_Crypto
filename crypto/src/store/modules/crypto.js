@@ -11,11 +11,14 @@ const getters = {
 
 const actions = {
   getAllCryptos({ commit }) {
-    commit("setCryptos", data.data);
-    // rzeczywiste zapytanie do API
-    // cryptoApi.get().then((response) => {
-    //   commit("setCryptos", response.data.data);
-    // });
+    if (process.env.NODE_ENV === "development") {
+      commit("setCryptos", data.data);
+    } else {
+      // rzeczywiste zapytanie do API
+      cryptoApi.get().then((response) => {
+        commit("setCryptos", response.data.data);
+      });
+    }
   },
   getFavCryptos({ commit }) {
     const n = Math.floor(Math.random() * (data.data.length - 1));

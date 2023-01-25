@@ -1,7 +1,24 @@
-# Vue 3 + Vite
+# Setup
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+- set environment variables
+- install dependencies
+- run the app
 
-## Recommended IDE Setup
+## Environment variables
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+NODE_ENV=development <= to fetch data from local json files
+NODE_ENV=production <= to fetch data from the api
+(see `src/api/cryptoApi.js`) set the api key
+
+```bash
+$ npm install
+$ npm run dev
+```
+
+## Dependencies
+
+- [axios](https://ghub.io/axios): Promise based HTTP client for the browser and node.js
+- [chart.js](https://ghub.io/chart.js): Simple HTML5 charts using the canvas element
+- [vite](https://ghub.io/vite): Next generation frontend tooling. It's fast!
+- [vue](https://github.com/vuejs/core): Reactive, component-oriented view layer for modern web interfaces.
+- [tailwind](https://ghub.io/tailwind): A utility-first CSS framework for rapidly building custom designs.
