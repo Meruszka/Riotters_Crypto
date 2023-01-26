@@ -1,3 +1,6 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/aec89a69-f394-408d-84d8-b52d5d0d1261/deploy-status)](https://app.netlify.com/sites/cryptocharts200609/deploys)
+
+
 # Setup
 
 - set environment variables
@@ -23,4 +26,3 @@ $ npm run dev
 - [vue](https://github.com/vuejs/core): Reactive, component-oriented view layer for modern web interfaces.
 - [tailwind](https://ghub.io/tailwind): A utility-first CSS framework for rapidly building custom designs.
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/aec89a69-f394-408d-84d8-b52d5d0d1261/deploy-status)](https://app.netlify.com/sites/cryptocharts200609/deploys)
